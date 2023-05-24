@@ -1,0 +1,113 @@
+@import "../../style.scss";
+
+.rightBar {
+  @include themify($themes) {
+    flex: 3.5;
+    position: sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: themed("bgSoft");
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: none;
+    }
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .container {
+      padding: 20px;
+
+      .item {
+        padding: 20px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin-bottom: 20px;
+        background-color: themed("bg");
+
+        span {
+          color: grey;
+        }
+
+        #trends {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        #trendText {
+          font-size: 12px;
+          margin-top: -25px;
+          color: grey;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin: 20px 0px;
+
+          .userInfo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            position: relative;
+
+            img {
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+
+            .online {
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background-color: limegreen;
+              position: absolute;
+              top: 0;
+              left: 30px;
+              top: 27px;
+            }
+
+            p {
+              color: themed("textColorSoft");
+              font-weight: 600;
+            }
+
+            span {
+              color: themed("textColor");
+            }
+          }
+
+          .buttons {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+
+            button {
+              border: none;
+              padding: 6px 5px;
+              color: white;
+              cursor: pointer;
+              border-radius: 4px;
+              box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+
+              &:first-child {
+                background-color: #486aff;
+              }
+              &:last-child {
+                background-color: #fd744a;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
