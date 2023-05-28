@@ -1,7 +1,8 @@
 # Social-Media-with-React
 
 click Login button to access the home page. <br />
-Website Preview: https://socialmedia-zihadnayem.netlify.app/
+Website Preview:
+https://socialmedia-zihadnayem.netlify.app/
 
 # Home Page:
 ![pcfullpage](https://github.com/ZihadHossainNayem/Social-Media-with-React/assets/30808845/a22ac7dd-0bf2-4ac5-a84b-63a2f9478332)
